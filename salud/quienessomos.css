@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #afe2b0;
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+nav ul li a:hover {
+    background-color: #ddd;
+}
+.main-photo {
+    width: 170px;
+    height: 140px;
+    margin-right: 4px;
+}
+
+.social-media {
+    display: flex;
+}
+
+
+.social-media a {
+    margin-left: 8px;
+}
+
+.social-media img {
+    width: 35px;
+    height: 35px;
+}
+
+
+
+.hero-section .icons img {
+    width: 190px;
+    height: 190px;
+    margin: 0 10px;
+}
+.delivery-info {
+    text-align: center;
+    padding: 20px;
+    background-color: #c1e4b3;
+}
+
+footer {
+    background-color: #c5cfc3;
+    color: #5f665a;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+footer h1 {
+    margin: 0;
+    font-size: 24px;
+}
+footer p {
+    margin: 5px 0 0;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.menu > li {
+    position: relative;
+}
+.menu > li > a {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #333;
+}
+.menu > li:hover > a {
+    background-color: #95f49e;
+}
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid #ddd;
+}
+
+
+.submenu > li > a {
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: #333;
+}
+.submenu > li > a:hover {
+    background-color: #b6cd8f;
+}
+.menu > li:hover .submenu {
+    display: block;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat en Vivo - Salud Express</title>
+    <link rel="stylesheet" href="stylescui.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #afe2b0;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+       
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu-item {
+            position: relative;
+        }
+
+        .menu > li {
+            margin: 0 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #000;
+            padding: 10px;
+            display: block;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item:hover .submenu {
+            display: block;
+        }
+
+        .submenu a {
+            padding: 10px;
+            color: #000;
+            text-decoration: none;
+            display: block;
+        }
+
+        .submenu a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .social-media img {
+            height: 24px;
+            margin-left: 10px;
+        }
+
+        .chat-container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-box {
+            height: 400px;
+            overflow-y: scroll;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+        }
+
+        .input-container {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .input-container textarea {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        .input-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #afe2b0;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .input-container button:hover {
+            background-color: #a0d3a2;
+        }
+
+        footer {
+            background-color: #afe2b0;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+        
+.delivery-info {
+    text-align: center;
+    padding: 20px;
+    background-color: #c1e4b3;
+}
+
+footer {
+    background-color: #c5cfc3;
+    color: #5f665a;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="logo-removebg-preview.png" alt="Principal" class="main-photo">
+                </a>
+
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#">Inicio</a>
+                    <ul class="submenu">
+                        <li><a href="presentacion.html">Presentacion</a></li>
+                        
+                        <li><a href="horios.html">Horarios</a></li>
+                    </ul>
+                </li>
+                <li><a href="quienessomos.html">Quienes somos</a>
+                    <ul class="submenu"></ul>
+                </li>
+                <li><a href="#">Productos</a>
+                    <ul class="submenu">
+                        <li><a href="conreceta.html">Con receta</a></li>
+                        <li><a href="sinreceta.html">Sin receta</a></li>
+                        <li><a href="medicamentos.html">Medicamentos</a></li>
+                        <li><a href="cuidado.html">Cuidado Personal</a></li>
+                        <li><a href="suplementos.html">Suplementos</a></li>
+                        <li><a href="parabebe.html">Para Bebe</a></li>
+                        <li><a href="equipo.html">Equipo Medico</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="asistencia.html">Asistencia 24/7</a></li>
+                        <li><a href="entregas.html">Entregas a Domicilio</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Asistente Virtual</a>
+                    <ul class="submenu">
+                        <li><a href="chat.html">Chat en Vivo</a></li>
+                        <li><a href="preguntas.html">Consultas Frecuentes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Mi Cuenta</a>
+                    <ul class="submenu">
+                        <li><a href="icioseccion.html">Iniciar Sesion</a></li>
+                        <li><a href="crearcuenta.html">Crear Cuenta</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Politicas</a>
+                    <ul class="submenu">
+                        <li><a href="terminos.html">Terminos y Condiciones</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="social-media">
+                <a href="https://es-la.facebook.com/"><img src="https://th.bing.com/th/id/R.1c9f44628cf925dad962a351f142d517?rik=P59iBBgHT2gvpw&riu=http%3a%2f%2fwww.misimagenesde.com%2fwp-content%2fuploads%2f2012%2f12%2ffacebook.png&ehk=IhwTXgRoE%2fI%2fjRQA4ebDFibgToj93Acg%2bgsUk6Z6xzI%3d&risl=&pid=ImgRaw&r=0" alt="facebook"></a>
+                <a href="https://x.com/"><img src="https://th.bing.com/th?id=ODLS.9cab171c-6190-48e1-b79f-fc45f657b2ae&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2" alt="Twitter"></a>
+                <a href="https://www.youtube.com/?gl=ES"><img src="https://th.bing.com/th?id=ODLS.b025e722-4d2d-48a8-8181-422e22a04d81&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2" alt="YouTube"></a>
+                <a href="https://www.instagram.com/"><img src="https://th.bing.com/th?id=ODLS.bb0631e3-e2e4-454c-89dd-ee2ce22a7190&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2" alt="instagram"></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            
+        </div>
+        <div class="input-container">
+            <textarea id="user-input" rows="3" placeholder="Escribe tu mensaje..."></textarea>
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+   
+    <script>
+        // Función para manejar el envío de mensajes
+        function sendMessage() {
+            const input = document.getElementById('user-input');
+            const chatBox = document.getElementById('chat-box');
+            const message = input.value.trim();
+
+            if (message) {
+                // Añadir mensaje del usuario al chat
+                chatBox.innerHTML += `<p><strong>Tú:</strong> ${message}</p>`;
+
+                // Aquí se simula una respuesta automática de la IA
+                const response = getAIResponse(message);
+                chatBox.innerHTML += `<p><strong>Asistente:</strong> ${response}</p>`;
+
+                // Limpiar el campo de entrada
+                input.value = '';
+                
+                // Desplazar el chat hacia abajo
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        }
+
+        // Función para obtener una respuesta simulada de la IA
+        function getAIResponse(message) {
+            // Simulación de respuestas
+            const responses = {
+                "hola": "¡Hola! ¿En qué puedo ayudarte hoy?",
+                "productos": "Ofrecemos una variedad de productos como medicamentos, suplementos y más. ¿Qué necesitas?",
+                "horarios": "Estamos disponibles 24/7 para ti.",
+                "entregas": "Realizamos entregas a domicilio las 24 horas del día.",
+                "recetas": "Puedes enviar tus recetas electrónicas a través de nuestra plataforma."
+            };
+
+            // Respuesta predeterminada
+            return responses[message.toLowerCase()] || "Lo siento, no entiendo tu pregunta. ¿Puedes ser más específico?";
+        }
+    </script>
+
+<main>
+    <div class="delivery-info">
+        <p>Servicio a Domicilio las 24 hrs y los 7 días de la semana</p>
+        <p>Disfruta de las ofertas 
+            de inicio de semana</p>
+    </div>
+    <footer>
+        <h1>Salud Express</h1>
+        <p>Al alcance de ti...</p>
+    </footer>
+</main>
+
+</body>
+</html>
+

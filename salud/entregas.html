@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylesmen.css">
+    <title>Entregas a Domicilio - Salud Express</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-color: #afe2b0;
+            color: #ffffff;
+            padding: 1rem 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-media a img {
+            width: 24px;
+            margin: 0 0.5rem;
+        }
+
+        .main-photo {
+            width: 170px;
+        }
+
+        .content {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #afe2b0;
+        }
+
+        .form-container {
+            margin-top: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            background-color: #afe2b0;
+            color: #ffffff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .form-group button:hover {
+            background-color: #9bd3a1;
+        }
+
+        footer {
+            background-color: #afe2b0;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        .contenedor-formulario {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: auto;
+        }
+
+        .campo-formulario {
+            margin-bottom: 15px;
+        }
+
+        .campo-formulario label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .campo-formulario input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .campo-formulario button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .campo-formulario button:hover {
+            background-color: #218838;
+        }
+
+        .delivery-info {
+    text-align: center;
+    padding: 20px;
+    background-color: #c1e4b3;
+}
+
+footer {
+    background-color: #c5cfc3;
+    color: #5f665a;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="logo-removebg-preview.png" alt="Principal" class="main-photo">
+            </a>
+
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Mi Cuenta</a></li>
+                <li><a href="terminos.html">Términos y Condiciones</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="https://www.facebook.com/"><img src="https://th.bing.com/th/id/R.1c9f44628cf925dad962a351f142d517?rik=P59iBBgHT2gvpw&riu=http%3a%2f%2fwww.misimagenesde.com%2fwp-content%2fuploads%2f2012%2f12%2ffacebook.png&ehk=IhwTXgRoE%2fI%2fjRQA4ebDFibgToj93Acg%2bgsUk6Z6xzI%3d&risl=&pid=ImgRaw&r=0" alt="Facebook"></a>
+                <a href="https://x.com/?mx=2"><img src="https://th.bing.com/th/id/OIP._Nlqv4LX_KauLZI5Oe56lgAAAA?rs=1&pid=ImgDetMain" alt="Twitter"></a>
+                <a href="https://www.youtube.com/"><img src="https://th.bing.com/th/id/OIP.doE-rjm8H3_2cY_NRqKFMAHaGX?w=519&h=446&rs=1&pid=ImgDetMain" alt="YouTube"></a>
+                <a href="https://www.instagram.com/"><img src="https://th.bing.com/th/id/OIP.izOOxDyHFwihHcQcKIExmQAAAA?rs=1&pid=ImgDetMain" alt="Instagram"></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h2>Entregas a Domicilio</h2>
+        <p>En Salud Express, te ofrecemos el servicio de entrega a domicilio para tu conveniencia. Queremos asegurarnos de que recibas tus productos farmacéuticos de manera rápida y segura en la comodidad de tu hogar.</p>
+        
+        <h3>Áreas de Cobertura</h3>
+        <ul>
+           <ul>Cuidad de Mexico</ul>
+           <ul>Queretaro</ul>
+           <ul>Monterry</ul>
+           <ul>Capital de Mexico</ul>
+            <ul>Otras áreas específicas (Consultar)</ul>
+        </ul>
+
+        <h3>Proceso de Entrega</h3>
+        <ol>
+            <ul>Selecciona tus productos en nuestro sitio web.</ul>
+            <ul>Recibiras una confirmación de tu pedido y una estimacion de la hora de entrega.</ul>
+            <ul>Tu pedido será enviado y podrás hacer seguimiento en tiempo real.</ul>
+           <ul>Recibe tu pedido en la puerta de tu casa</ul>
+        </ol>
+
+        <h3>Beneficios del Servicio</h3>
+        <ul>
+          <ul>Entrega rápida y eficiente en la comodidad de tu hogar.</ul>
+            <ul>Seguimiento en tiempo real para saber el estado de tu pedido</ul>
+            <ul>Comodidad de no tener que salir de casa para recibir tus productos.</ul>
+            <ul>Atención personalizada y segura en cada entrega.</ul>
+        </ul>
+
+        <h3>Formulario de Registro</h3>
+        <div class="contenedor-formulario">
+            <form action="procesar_formulario.php" method="POST">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="Producto_comprado">Producto comprado:</label>
+                    <input type="text" id="Producto_comprado" name="Producto_comprado" required>
+                </div>
+                <div class="campo-formulario">
+                    <button type="submit">Registrar</button>
+                    
+                    <div class="campo-formulario">
+                        <button type="reset">Borrar</button>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <div class="delivery-info">
+            <p>Servicio a Domicilio las 24 hrs y los 7 días de la semana</p>
+            <p>Disfruta de las ofertas 
+                de inicio de semana</p>
+        </div>
+        <footer>
+            <h1>Salud Express</h1>
+            <p>Al alcance de ti...</p>
+        </footer>
+    </main>
+    
+</body>
+</html>
